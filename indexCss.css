@@ -59,7 +59,7 @@ nav{
     position: relative;
     bottom: 110px;
     color: white;
-    background-image: url(Sports-Image-Background.png);
+    background-image: url(img/Sports-Image-Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ nav{
     width: 145px;
     position: relative;
     left: 65vw;
-    bottom: 125vh;
+    bottom: 115vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
@@ -100,8 +100,8 @@ nav{
     height: auto;
     width: 133px;
     position: relative;
-    left: 75vw;
-    bottom: 120vh;
+    left: 80vw;
+    bottom: 110vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
