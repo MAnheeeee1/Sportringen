@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="utbud.css">
+  </head>
+  <body>
+    <nav class="nav-nav">
+      <img id="nav-LogotypHeader" src="SportRingenOutlet-logotype-png.png" alt="Logotyp">
+      <div class="nav-MenyCenter">
+        <a href="index.html"><button type="button">Hem</button></a>
+        <a href="utbud.html"><button type="button">Utbud</button></a>
+        <a href="#"><button type="button">Länk 3</button></a>
+      </div>
+    </nav>
+    <section class="utbud-Hero">
+      <div class="utbud-Hero-Info">
+        <h1>
+          Kända märken till
+          <span class="utbud-Hero-Info-underline">låga</span> priser
+        </h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
+          rerum, veritatis ipsa accusamus alias eius libero illum ipsum
+          temporibus tenetur labore. Quibusdam asperiores illum cupiditate,
+          obcaecati sint soluta quae itaque.
+        </p>
+      </div>
+
+      <div class="utbud-LogoContainer">
+        <div class="utbud-Logo-1">
+          <img src="adidasLogo.jpg" alt="adidas loga" />
+          <img src="ascisLogo.png" alt="ascis loga" />
+          <img src="nikeLogo.jpg" alt="nike loga" />
+        </div>
+
+        <div class="utbud-Logo-2">
+          <img src="adidasLogo.jpg" alt="adidas loga" />
+          <img src="ascisLogo.png" alt="ascis loga" />
+          <img src="nikeLogo.jpg" alt="nike loga" />
+        </div>
+      </div>
+    </section>
+    <section class="utbud-utbud">
+      <h1>Stort utbud för alla sporter</h1>
+      <div class="utbud-utbud-container">
+        <div class="utbud-utbud-gridcontainer">
+          <div class="utbud-utbud-card hockey">
+            <div class="utbud-utbud-erbjudandeIkon">99% REA</div>
+          </div>
+          <div class="utbud-utbud-card löpning"></div>
+          <div class="utbud-utbud-card simning"></div>
+          <div class="utbud-utbud-card vandring"></div>
+          <button>Upptäck mer</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="deals-section">
+      <div class="category-buttons">
+        <button class="category-btn" data-category="hockey">Hockey</button>
+        <button class="category-btn" data-category="running">Löpning</button>
+        <button class="category-btn" data-category="swimming">Simning</button>
+        <button class="category-btn" data-category="hiking">Vandring</button>
+      </div>
+      <div class="deals-content"></div>
+    </section>
+
+
+
+    <script>
+      const erbjudandeData = {
+        hockey: {
+          title: 'Hockey Utrustning',
+          description: 'Upptäck vårt breda sortiment av hockeyutrustning från ledande märken. Vi erbjuder allt från skridskor till klubbor och skydd, perfekt för både nybörjare och erfarna spelare.',
+          image: 'hockey.jpg',
+          stats: {
+            products: '150+',
+            brands: '12',
+            discount: 'Upp till 40%'
+          }
+        },
+        running: {
+          title: 'Löpning & Jogging',
+          description: 'Hitta den perfekta utrustningen för din löpning. Vi har ett stort utbud av skor, kläder och tillbehör som hjälper dig att nå dina träningsmål.',
+          image: 'löpning.jpg',
+          stats: {
+            products: '200+',
+            brands: '15',
+            discount: 'Upp till 30%'
+          }
+        },
+        swimming: {
+          title: 'Simning',
+          description: 'Dyk in i vårt sortiment av simutrustning. Från tävlingsdräkter till träningsaccessoarer, vi har allt du behöver för att förbättra din simning.',
+          image: 'simning.jpg',
+          stats: {
+            products: '100+',
+            brands: '8',
+            discount: 'Upp till 25%'
+          }
+        },
+        hiking: {
+          title: 'Vandring & Outdoor',
+          description: 'Utforska naturen med rätt utrustning. Vi erbjuder kvalitetsprodukter för alla typer av äventyr, från dagsvandringar till längre expeditioner.',
+          image: 'vandring.jpg',
+          stats: {
+            products: '180+',
+            brands: '10',
+            discount: 'Upp till 35%'
+          }
+        }
+      };
+
+      const erbjudandeKontent = document.querySelector('.deals-content');
+      const kategoriKnappar = document.querySelectorAll('.category-btn');
+
+      function showDeals(category) {
+        kategoriKnappar.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        erbjudandeKontent.classList.remove('visible');
+        
+        setTimeout(() => {
+          erbjudandeKontent.innerHTML = '';
+          
+          const categoryData = erbjudandeData[category];
+          const section = document.createElement('div');
+          section.className = 'category-section';
+          
+          section.innerHTML = `
+            <div class="category-info">
+              <h2>${categoryData.title}</h2>
+              <p>${categoryData.description}</p>
+              <div class="category-stats">
+                <div class="stat-item">
+                  <h4>${categoryData.stats.products}</h4>
+                  <p>Produkter</p>
+                </div>
+                <div class="stat-item">
+                  <h4>${categoryData.stats.brands}</h4>
+                  <p>Varumärken</p>
+                </div>
+                <div class="stat-item">
+                  <h4>${categoryData.stats.discount}</h4>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="brand-banner">
+                <div class="brand-banner-container">
+                  <img src="adidasLogo.jpg" alt="adidas logo" />
+                  <img src="nikeLogo.jpg" alt="nike logo" />
+                  <img src="ascisLogo.png" alt="asics logo" />
+                </div>
+              </div>
+            </div>
+            <img src="${categoryData.image}" alt="${categoryData.title}" class="category-image">
+          `;
+          
+          erbjudandeKontent.appendChild(section);
+
+          erbjudandeKontent.classList.add('visible');
+        }, 300);
+      }
+
+      kategoriKnappar.forEach(button => {
+        button.addEventListener('click', (e) => {
+          showDeals(e.target.dataset.category);
+        });
+      });
+
+      document.querySelector('[data-category="hockey"]').click();
+    </script>
+  </body>
+</html>
