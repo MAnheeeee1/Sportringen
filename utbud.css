@@ -110,6 +110,7 @@ body {
     margin: 0;
   }
 
+
   .utbud-Logo-1 img:hover,
   .utbud-Logo-2 img:hover {
     transform: scale(1.05);
@@ -122,6 +123,8 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding-right: 20px;
+    padding-left: 5rem;
+  
   }
 
   .utbud-Hero-Info h1 {
@@ -254,6 +257,13 @@ body {
     transform: translateY(0);
   }
 
+  .brand-banner-container img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
   .category-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,11 +304,14 @@ body {
   .stat-item h4 {
     color: #ff4444;
     margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 
   .stat-item p {
     margin: 5px 0 0 0;
     font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .category-image {
