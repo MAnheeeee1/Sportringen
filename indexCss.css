@@ -86,7 +86,7 @@ nav{
     width: 145px;
     position: relative;
     left: 65vw;
-    bottom: 115vh;
+    bottom: 120vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
@@ -101,7 +101,7 @@ nav{
     width: 133px;
     position: relative;
     left: 80vw;
-    bottom: 110vh;
+    bottom: 120vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
@@ -111,7 +111,17 @@ nav{
     width: auto;
 }
 
+.infobox1{
+    position: relative;
+    bottom: 750px;
+    width: auto;
+    height: 100vh;
+    background-image: url(img/image-HallbarUtveckling-Mynt-och-trad.png);
+}
 
+
+
+/*Footer*/
 
 .footer {
     background: black;
