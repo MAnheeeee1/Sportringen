@@ -3,7 +3,7 @@ body{
     margin: 0;
     border: 0;
     padding: 0;
-    overflow-x: hidden;
+
     background-color: black;
 }
 @font-face{
@@ -17,6 +17,9 @@ nav{
     padding: 10px;
     display: flex;
     align-items:center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 #LogotypHeader{
     height: 125px;
@@ -89,7 +92,7 @@ nav{
     width: 145px;
     position: relative;
     left: 65vw;
-    bottom: 115vh;
+    bottom: 95vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
@@ -104,7 +107,7 @@ nav{
     width: 133px;
     position: relative;
     left: 80vw;
-    bottom: 110vh;
+    bottom: 100vh;
     background-color: rgb(128, 128, 128, 50%);
     padding: 20px;
     border-radius: 25px;
@@ -112,4 +115,36 @@ nav{
 .IntroBox2 img{
     height: 200px;
     width: auto;
+}
+
+
+.Hallbarhet{
+    background-image: url(img/image-Hallbar-utveckling-vaxter-och-pengar.png);
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 50vh;
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#Hallbarhet-dimmer{
+    background-color: rgb(0,0,0,50%);
+    position: relative;
+    bottom: 150vh;
+    height: 100vh;
+    width: 100vw;
+}
+#Hallbarhet-Title{
+    padding-top: 7vw;
+    padding-right: 2.5vw;
+    font-family: SportyFont, Arial, Helvetica, sans-serif;
+    font-size: clamp(5vw ,6vw, 8vw);
+    text-align: end;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+#Hallbarhet-Title span{
+    color: rgb(1, 167, 1);
 }
