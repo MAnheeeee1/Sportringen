@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="utbud.css">
+    <link rel="stylesheet" href="utbud.css" />
   </head>
   <body>
     <nav class="nav-nav">
-      <img id="nav-LogotypHeader" src="SportRingenOutlet-logotype-png.png" alt="Logotyp">
+      <img
+        id="nav-LogotypHeader"
+        src="SportRingenOutlet-logotype-png.png"
+        alt="Logotyp"
+      />
       <div class="nav-MenyCenter">
         <a href="utbud.html"><button type="button">Bårt utbud</button></a>
         <a href="index.html"><button type="button">Startsida</button></a>
@@ -48,14 +52,44 @@
       <div class="utbud-utbud-container">
         <div class="utbud-utbud-gridcontainer">
           <div class="utbud-utbud-card hockey">
-            <div class="utbud-utbud-erbjudandeIkon">60% REA PÅ UTVALDA KLUBBOR</div>
-            <h1>Hockey</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque iste voluptate aliquam, corrupti necessitatibus nemo consequuntur rerum deleniti. Assumenda nisi autem suscipit adipisci at eveniet odio similique debitis, quos aspernatur?</p>
+            <div class="utbud-utbud-erbjudandeIkon">
+              60% REA PÅ UTVALDA KLUBBOR
+            </div>
+            <h1>Hockey</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              iste voluptate aliquam, corrupti necessitatibus nemo consequuntur
+              rerum deleniti. Assumenda nisi autem suscipit adipisci at eveniet
+              odio similique debitis, quos aspernatur?
+            </p>
           </div>
           <div class="utbud-utbud-card löpning">
-            <h1>Löpning</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis non dignissimos officiis tempora ea veniam, rerum, accusantium nostrum architecto quaerat quae reprehenderit qui impedit placeat quis quas aspernatur? Modi?</p>
+            <h1>Löpning</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              veritatis non dignissimos officiis tempora ea veniam, rerum,
+              accusantium nostrum architecto quaerat quae reprehenderit qui
+              impedit placeat quis quas aspernatur? Modi?
+            </p>
           </div>
-          <div class="utbud-utbud-card simning"><h1>Simning</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius vel, fugit accusantium delectus eum perferendis eligendi, corrupti ratione molestias ipsam error tempora officiis ea perspiciatis, dolore ipsa consequuntur omnis!</p></div>
-          <div class="utbud-utbud-card vandring"><h1>Vandring & Outdoor</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem suscipit accusantium, eum officiis ducimus ab inventore pariatur repudiandae reprehenderit. Culpa magni libero aut expedita labore quis fugiat odio aliquam.</p></div>
+          <div class="utbud-utbud-card simning">
+            <h1>Simning</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos eius vel, fugit accusantium delectus eum perferendis
+              eligendi, corrupti ratione molestias ipsam error tempora officiis
+              ea perspiciatis, dolore ipsa consequuntur omnis!
+            </p>
+          </div>
+          <div class="utbud-utbud-card vandring">
+            <h1>Vandring & Outdoor</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem
+              suscipit accusantium, eum officiis ducimus ab inventore pariatur
+              repudiandae reprehenderit. Culpa magni libero aut expedita labore
+              quis fugiat odio aliquam.
+            </p>
+          </div>
           <button>Upptäck mer</button>
         </div>
       </div>
@@ -71,68 +105,95 @@
       <div class="deals-content"></div>
     </section>
 
-
-
     <script>
       const erbjudandeData = {
         hockey: {
-          title: 'Hockey Utrustning',
-          description: 'Upptäck vårt breda sortiment av hockeyutrustning från ledande märken. Vi erbjuder allt från skridskor till klubbor och skydd, perfekt för både nybörjare och erfarna spelare.',
-          image: 'img/hockey.jpg',
+          title: "Hockey Utrustning",
+          description:
+            "Upptäck vårt breda sortiment av hockeyutrustning från ledande märken. Vi erbjuder allt från skridskor till klubbor och skydd, perfekt för både nybörjare och erfarna spelare.",
+          image: "img/hockey.jpg",
+          erbjudande: {
+            product: "Hoka Bondi 9",
+            productInfo: "lorem",
+            previousPrice: 2500,
+            salePrice: 899,
+            productImg: "./img/erbjudande/hoka-bondi9.jpg",
+          },
           stats: {
-            products: '150+',
-            brands: '12',
-            discount: 'Upp till 40%'
-          }
+            products: "150+",
+            brands: "12",
+            discount: "Upp till 40%",
+          },
         },
         running: {
-          title: 'Löpning & Jogging',
-          description: 'Hitta den perfekta utrustningen för din löpning. Vi har ett stort utbud av skor, kläder och tillbehör som hjälper dig att nå dina träningsmål.',
-          image: 'img/löpning.jpg',
+          title: "Löpning & Jogging",
+          description:
+            "Hitta den perfekta utrustningen för din löpning. Vi har ett stort utbud av skor, kläder och tillbehör som hjälper dig att nå dina träningsmål.",
+          image: "img/löpning.jpg",
+          erbjudande: {
+            product: "Hoka Bondi 9",
+            productInfo: "lorem",
+            previousPrice: 2500,
+            salePrice: 899,
+          },
           stats: {
-            products: '200+',
-            brands: '15',
-            discount: 'Upp till 30%'
-          }
+            products: "200+",
+            brands: "15",
+            discount: "Upp till 30%",
+          },
         },
         swimming: {
-          title: 'Simning',
-          description: 'Dyk in i vårt sortiment av simutrustning. Från tävlingsdräkter till träningsaccessoarer, vi har allt du behöver för att förbättra din simning.',
-          image: 'img/simning.jpg',
+          title: "Simning",
+          description:
+            "Dyk in i vårt sortiment av simutrustning. Från tävlingsdräkter till träningsaccessoarer, vi har allt du behöver för att förbättra din simning.",
+          image: "img/simning.jpg",
+          erbjudande: {
+            product: "Hoka Bondi 9",
+            productInfo: "lorem",
+            previousPrice: 2500,
+            salePrice: 899,
+          },
           stats: {
-            products: '100+',
-            brands: '8',
-            discount: 'Upp till 25%'
-          }
+            products: "100+",
+            brands: "8",
+            discount: "Upp till 25%",
+          },
         },
         hiking: {
-          title: 'Vandring & Outdoor',
-          description: 'Utforska naturen med rätt utrustning. Vi erbjuder kvalitetsprodukter för alla typer av äventyr, från dagsvandringar till längre expeditioner.',
-          image: 'img/vandring.jpg',
+          title: "Vandring & Outdoor",
+          description:
+            "Utforska naturen med rätt utrustning. Vi erbjuder kvalitetsprodukter för alla typer av äventyr, från dagsvandringar till längre expeditioner.",
+          image: "img/vandring.jpg",
+          erbjudande: {
+            product: "Hoka Bondi 9",
+            productInfo: "lorem",
+            previousPrice: 2500,
+            salePrice: 899,
+          },
           stats: {
-            products: '180+',
-            brands: '10',
-            discount: 'Upp till 35%'
-          }
-        }
+            products: "180+",
+            brands: "10",
+            discount: "Upp till 35%",
+          },
+        },
       };
 
-      const erbjudandeKontent = document.querySelector('.deals-content');
-      const kategoriKnappar = document.querySelectorAll('.category-btn');
+      const erbjudandeKontent = document.querySelector(".deals-content");
+      const kategoriKnappar = document.querySelectorAll(".category-btn");
 
       function showDeals(category) {
-        kategoriKnappar.forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
+        kategoriKnappar.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
 
-        erbjudandeKontent.classList.remove('visible');
-        
+        erbjudandeKontent.classList.remove("visible");
+
         setTimeout(() => {
-          erbjudandeKontent.innerHTML = '';
-          
+          erbjudandeKontent.innerHTML = "";
+
           const categoryData = erbjudandeData[category];
-          const section = document.createElement('div');
-          section.className = 'category-section';
-          
+          const section = document.createElement("div");
+          section.className = "category-section";
+
           section.innerHTML = `
             <div class="category-info">
               <h2>${categoryData.title}</h2>
@@ -151,7 +212,16 @@
                   <p>Rabatt</p>
                 </div>
               </div>
-              <div><h1>Utvalda erbjudande</h1><h1>Hoka Bondi 8</h1><p>Ett par fantastiska löparskor med otroligt bra dämpning till ett ännu bättre pris!</p></div>
+              <div>
+                <h1>Utvalda erbjudande</h1>
+                <h1>${categoryData.erbjudande.product}</h1>
+                <p>${categoryData.erbjudande.productInfo}</p>
+                <div>
+                  <h2>${categoryData.erbjudande.previousPrice}</h2>
+                  <h2>${categoryData.erbjudande.salePrice}</h2>
+                </div>
+                
+                </div>
               <div class="brand-banner">
                 <div class="brand-banner-container">
                   <img src="img/adidasLogo.jpg" alt="adidas logo"  />
@@ -162,15 +232,15 @@
             </div>
             <img src="${categoryData.image}" alt="${categoryData.title}" class="category-image">
           `;
-          
+
           erbjudandeKontent.appendChild(section);
 
-          erbjudandeKontent.classList.add('visible');
+          erbjudandeKontent.classList.add("visible");
         }, 300);
       }
 
-      kategoriKnappar.forEach(button => {
-        button.addEventListener('click', (e) => {
+      kategoriKnappar.forEach((button) => {
+        button.addEventListener("click", (e) => {
           showDeals(e.target.dataset.category);
         });
       });
